@@ -12,11 +12,8 @@ namespace UserRegistrationMSTest
         /// <param name="firstNameInput"></param>
         [TestCategory("First Name")]
         [TestMethod]
-        [DataRow("Vishal")]
-        [DataRow("vishal")]
-        [DataRow("vis")]
-        [DataRow("Vis")]
-        [DataRow("V")]
+        [DataRow("Nikhil")]
+        [DataRow("nikhil")]
         [DataRow("")]
         [DataRow(null)]
         public void TestingFirstName(string firstNameInput)
@@ -42,7 +39,7 @@ namespace UserRegistrationMSTest
         /// <param name="lastNameInput"></param>
         [TestCategory("Last Name")]
         [TestMethod]
-        [DataRow("garg")]
+        [DataRow("yadav")]
         public void TestingLastName(string lastNameInput)
         {
             //Arrange
@@ -134,7 +131,7 @@ namespace UserRegistrationMSTest
         /// </summary>
         /// <param name="passwordInput"></param>
         [TestMethod]
-        [DataRow("vishalgargVisGarg111")]
+        [DataRow("nikhilyadavindigo1997")]
         [DataRow("")]
         [DataRow(null)]
         public void TestingPassword(string passwordInput)
