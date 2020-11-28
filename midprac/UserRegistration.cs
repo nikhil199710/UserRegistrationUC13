@@ -22,7 +22,9 @@ namespace UserRegistrationProblem
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public bool FirstAndLastName(string input) => Regex.IsMatch(input, firstNamePattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_name, "invalid name");
+        public bool FirstAndLastName(string input) => 
+                                                    Regex.IsMatch(input, firstNamePattern) ? true : throw new 
+                                                    UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_name, "invalid name");
 
         /// <summary>
         /// Emails the specified input.
@@ -35,7 +37,9 @@ namespace UserRegistrationProblem
         /// or
         /// email can not be empty or null
         /// </exception>
-        public bool Email(string input) => Regex.IsMatch(input, emailPattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_email, "invalid email");
+        public bool Email(string input) => 
+                                         Regex.IsMatch(input, emailPattern) ? true : throw new 
+                                         UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_email, "invalid email");
         /// <summary>
         /// Mobiles the no.
         /// matching pattern using lambda expression
@@ -47,7 +51,9 @@ namespace UserRegistrationProblem
         /// or
         /// UserRegistrationCustomException.ExceptionType.EMPTY_MESSAGE, mobile no can not be empty or null
         /// </exception>
-        public bool MobileNo(string input) => Regex.IsMatch(input, mobileNoPattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_phone, "invalid phone");
+        public bool MobileNo(string input) => 
+                                                Regex.IsMatch(input, mobileNoPattern) ? true : throw new 
+                                                UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_phone, "invalid phone");
 
         /// <summary>
         /// Passwords the specified input.
@@ -60,7 +66,9 @@ namespace UserRegistrationProblem
         /// or
         /// UserRegistrationCustomException.ExceptionType.EMPTY_MESSAGE, password can not be empty or null
         /// </exception>
-        public bool Password(string input) => Regex.IsMatch(input, passwordPattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_password, "invalid password");
+        public bool Password(string input) => 
+                                            Regex.IsMatch(input, passwordPattern) ? true : throw new 
+                                            UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_password, "invalid password");
 
     }
 }
