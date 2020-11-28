@@ -6,9 +6,6 @@ namespace UserRegistrationProblem
 {
     public class UserRegistration
     {
-        //pattern for mail id.
-        //string emailPattern = @"^[a-z]{1}[a-z0-9]*([._]?[a-z0-9]+)*\@[a-z0-9]+\.(com|net)(\.[a-z]{2})?$";
-        //satisfies all sample cases of mails.
         //returns true if input matches with email pattern.
         string emailPattern = @"^([a-z0-9A-Z])+([._+-]?[a-z0-9A-Z]+)*[@]{1}[a-z0-9A-Z]+[.]{1}[a-zA-Z]{3}([.]{1}[a-z]{2})?$";
         //pattern for first name and last name
