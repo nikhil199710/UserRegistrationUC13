@@ -47,8 +47,7 @@ namespace UserRegistrationProblem
         /// or
         /// UserRegistrationCustomException.ExceptionType.EMPTY_MESSAGE, mobile no can not be empty or null
         /// </exception>
-        public bool MobileNo(string input) => 
-                                                Regex.IsMatch(input, mobileNoPattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_phone, "invalid phone");
+        public bool MobileNo(string input) => Regex.IsMatch(input, mobileNoPattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_phone, "invalid phone");
 
         /// <summary>
         /// Passwords the specified input.
