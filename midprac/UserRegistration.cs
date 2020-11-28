@@ -22,9 +22,7 @@ namespace UserRegistrationProblem
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public bool FirstAndLastName(string input) => 
-                                                    Regex.IsMatch(input, firstNamePattern) ? true : throw new 
-                                                    UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_name, "invalid name");
+        public bool FirstAndLastName(string input) => Regex.IsMatch(input, firstNamePattern) ? true : throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.invalid_name, "invalid name");
 
         /// <summary>
         /// Emails the specified input.
